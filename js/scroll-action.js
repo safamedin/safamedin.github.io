@@ -1,0 +1,1 @@
+$(document).ready(function(){var offset=0;var scrollTime=0;if($(window).width()>500&&$(window).height()>500){offset=-($("#navbar").height()*2.1);scrollTime=400}else{offset=-5;scrollTime=200}$('a[href^="#"]').click(function(){var st=$($(this).attr("href")).offset().top+offset+1;$("html, body").animate({scrollTop:st},scrollTime);return false})});
